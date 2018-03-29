@@ -2,13 +2,16 @@ function conversor() { // Uma função é um bloco de código para realizar uma 
     
     var inFilme = document.getElementById("inFilme"); //Rertorna o elemento pelo seu ID do Documento que é chamado 
     var inDuracao = document.getElementById("inDuracao");
-    var mostraFilme = document.getElementById("mostrarFilme");
+    var mostrarFilme = document.getElementById("mostrarFilme");
     var mostraConversao = document.getElementById("mostrarConversao");
 
-    var convertHoras = (inDuracao.value / 60).toFixed(2); //Converte o valor retornado na variável inDuracao de min. para horas
+    var horas = Number(inDuracao.value);
 
-    mostraFilme.textContent = "Filme: " + inFilme.value;
-    mostrarConversao.textContent = "Duração: " + convertHoras + " horas";
+    var convertHoras = Math.floor(inDuracao.value / 60); //Converte o valor retornado na variável inDuracao de min. para horas
+    var min = horas % 60;
+
+    mostrarFilme.textContent = "Filme: " + inFilme.value;
+    mostrarConversao.textContent = "Duração: " + convertHoras + " horas e " + min + " minutos.";
 
 } 
 
