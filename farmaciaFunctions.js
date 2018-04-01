@@ -11,7 +11,7 @@ function calcularValores() {
 
     if (quantd.value >= 2) {
         valorTotal = (precoMedicamento.value * quantd.value).toFixed(0);
-        mensagem.textContent = " Parabéns, você recebeu a promoção. Os centavos foram descontados."
+        mensagem.textContent = "Parabéns, você recebeu a promoção. Os centavos foram descontados."
     } else {
         valorTotal = (precoMedicamento.value * quantd.value).toFixed(2);
 
