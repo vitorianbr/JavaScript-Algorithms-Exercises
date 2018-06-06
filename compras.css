@@ -1,0 +1,14 @@
+img {
+float: left;
+width: 350px;
+height: 500px;
+margin: 10px;
+}
+      
+h1 {
+ border-bottom-style: inset;
+} 
+      
+pre {
+font-size: 1.2eem;
+} 

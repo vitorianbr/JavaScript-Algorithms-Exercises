@@ -1,0 +1,19 @@
+
+img {
+  float: left;
+  width: 350px;
+  height: 250px;
+  margin: 10px;
+}
+
+h1 {
+  border-bottom-style: inset;
+} 
+
+pre {
+  font-size: 1.2eem;
+} 
+
+h3 {
+  color: rgb(35, 173, 35);
+}
