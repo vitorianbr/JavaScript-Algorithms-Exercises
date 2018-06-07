@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Teste</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //push adiciona mais elementos ao array
+        //pop remove elementos e um array
+        //join une todos os elementos de um array em uma string
+        //shift remove o 1° elemento do array e desloca os demais uma posição pra "baixo"(ou pra atrás) 
+        var Cidades = ["São Paulo", "Recife", "Vitória", "Aracaju"];
+        Cidades.push("Blumenau");
+        Cidades.push("Ouro Preto");
+        Cidades.push("Maceió");
+        document.write("Antes do deslocamento: " + "<br\>");
+        document.write("Tamanho: " + Cidades.length + "<br\>");
+        document.write("1° elemento: " + Cidades[0] + "<br\><br\>");
+        Cidades.shift();
+        document.write("Após o deslocamento: <br\>");
+        document.write("Tamanho: " + Cidades.length + "<br\>");
+        document.write("1° elemento: " + Cidades[0] + "<br\>");
+    </script>
+</body>
+
+</html>
